@@ -66,6 +66,7 @@ ExternalProject_Add(OpenCV
   URL ${OpenCV_url}
   URL_MD5 ${OpenCV_md5}
   PREFIX ${fletch_BUILD_PREFIX}
+  DOWNLOAD_NAME ${OpenCV_dlname}
   DOWNLOAD_DIR ${fletch_DOWNLOAD_DIR}
   INSTALL_DIR ${fletch_BUILD_INSTALL_PREFIX}
 

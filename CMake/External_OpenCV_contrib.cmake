@@ -3,6 +3,7 @@ ExternalProject_Add(OpenCV_contrib
   URL ${OpenCV_contrib_url}
   URL_MD5 ${OpenCV_contrib_md5}
   PREFIX ${fletch_BUILD_PREFIX}
+  DOWNLOAD_NAME ${OpenCV_contrib_dlname}
   DOWNLOAD_DIR ${fletch_DOWNLOAD_DIR}
 
   # This is a support repository for OpenCV 3.x and does not contain any
