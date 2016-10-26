@@ -80,19 +80,19 @@ set(Eigen_md5 "135d8d43aaee5fb54cf5f3e981b1a6db")
 set(Eigen_dlname "eigen-${Eigen_version}.tar.gz")
 list(APPEND fletch_external_sources Eigen)
 
-# GLog
-if(NOT WIN32)
-  set(GLog_version "0.3.3")
-  set(GLog_url "https://github.com/google/glog/archive/v${GLog_version}.tar.gz")
-  set(GLog_md5 "c1f86af27bd9c73186730aa957607ed0")
-  list(APPEND fletch_external_sources GLog)
-endif()
-
 # GFlags
 set(GFlags_version "2.1.2")
 set(GFlags_url "https://github.com/gflags/gflags/archive/v${GFlags_version}.tar.gz")
 set(GFlags_md5 "ac432de923f9de1e9780b5254884599f")
 list(APPEND fletch_external_sources GFlags)
+
+# GLog
+set(GLog_version "0.3.4")
+set(GLog_url "https://github.com/google/glog/archive/b6a5e0524c28178985f0d228e9eaa43808dbec3c.tar.gz")
+set(GLog_md5 "79e777572683ae0f491c7141d06e7063")
+#set(GLog_url "https://github.com/google/glog/archive/v${GLog_version}.tar.gz")
+#set(GLog_md5 "df92e05c9d02504fb96674bc776a41cb")
+list(APPEND fletch_external_sources GLog)
 
 #OpenBLAS
 if(NOT WIN32)
